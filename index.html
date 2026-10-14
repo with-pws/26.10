@@ -12,7 +12,7 @@
 <meta property="og:title" content="도요새편지 &lt;03&gt; · 2026년 10월 29일">
 <meta property="og:description" content="사회혁신가 지원사업 경과와 회원의날 &lt;이야기 포트럭 파티&gt; 소식을 전합니다.">
 <meta property="og:url" content="https://with-pws.github.io/26.10/">
-<meta property="og:image" content="https://with-pws.github.io/26.10/poster.jpg">
+<meta property="og:image" content="https://with-pws.github.io/26.10/cover.jpg">
 <meta property="og:image:alt" content="도요새편지 2026년 10월호 표지">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
@@ -677,6 +677,12 @@
   /* 얇은 신청 버튼 */
   .linkbtn--slim{font-size:.95rem;padding:9px 22px;border-bottom-width:2px}
   @media (max-width:760px){ .linkbtn--slim{font-size:.9rem;padding:8px 18px} }
+
+  /* 표지 사진 (영상 대신) */
+  .cover--photo{background:none}
+  .cover--photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+  .cover__tmp{margin:-26px 0 26px;text-align:right;font-family:var(--sans);font-size:.75rem;color:var(--ink-faint)}
 </style>
 </head>
 <body>
@@ -701,7 +707,9 @@
     </div>
 
     <!-- 표지 영상·사진 자리 (준비되면 2호처럼 .cover + video로 교체) -->
-    <div class="ph ph--cover">표지 영상 또는 사진 자리</div>
+    <figure class="cover cover--photo"><img src="cover.jpg" alt="회원의날 행사장에 띄운 '안녕? 원순씨!' 풍선"></figure>
+    <!-- 최종 사진 받으면 아래 한 줄 삭제 -->
+    <p class="cover__tmp">(임시)</p>
 
     <section class="prose rise">
       <span class="eyebrow">여는 글</span>
@@ -726,7 +734,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead">사회혁신가 지원사업<br class="br-mo"> 경과 보고</h2>
+    <h2 class="h-lead"><span class="uline">사회혁신가 지원사업</span><br class="br-mo"> 경과 보고</h2>
 
     <section class="news">
       <div class="prose">

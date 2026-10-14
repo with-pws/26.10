@@ -669,15 +669,10 @@
     .program__list small{padding-left:1.4em;font-size:.76rem}
   }
 
-  /* 크레용 물결 밑줄 강조 */
-  .crayon{
-    white-space:nowrap;
-    background-repeat:no-repeat;
-    background-position:0 100%;
-    background-size:100% .55em;
-    padding-bottom:.12em;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30' preserveAspectRatio='none'><defs><filter id='c' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.9 .35' numOctaves='2' seed='7' result='n'/><feColorMatrix in='n' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 3.2 -.9' result='g'/><feDisplacementMap in='SourceGraphic' in2='n' scale='4' result='d'/><feComposite in='d' in2='g' operator='in'/></filter></defs><g filter='url(%23c)' fill='none' stroke-linecap='round' stroke-linejoin='round'><path d='M4 16 Q 16 4, 28 16 T 52 16 T 76 16 T 100 16 T 124 16 T 148 16 T 172 16 T 196 16 T 220 16 T 244 16 T 268 16 T 292 16' stroke='%23f9c22b' stroke-width='7'/></g></svg>");
-  }
+
+  /* 별표를 오른쪽 끝(> 위)으로 */
+  .mark--right::before{left:auto;right:-.42em}
+  .mark--right::after{left:auto;right:.36em}
 </style>
 </head>
 <body>
@@ -727,12 +722,13 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="mark">사회혁신가 지원사업</span><br class="br-mo"> 경과 보고</h2>
+    <h2 class="h-lead">사회혁신가 지원사업<br class="br-mo"> 경과 보고</h2>
 
     <section class="news">
       <div class="prose">
         <p>지난 10월 1일부터 10월 25일까지 진행한 <strong>사회혁신가 지원사업 공모</strong>에 많은 분들이 관심을 갖고 지원해 주셨습니다. 지원해 주신 모든 분, 그리고 공모 소식을 주변에 알려 주신 회원 여러분께 감사드립니다.</p>
-        <p>현재 심사를 진행하고 있으며, <span class="hl">선정자 현황은 11월 14일 회원의날</span>에 회원 여러분께 직접 보고드리겠습니다.</p>
+        <p>재단은 심사를 거쳐 시민사회의 허리를 세울 활동가를 선정하겠습니다. 원순씨의 친구들이 십시일반 마련한 지원금과 원순씨가 남긴 관계망으로, 선정된 분들의 활동이 다시 시민사회의 힘이 될 수 있도록 함께하겠습니다.</p>
+        <p><span class="hl">선정자 현황은 11월 14일 회원의날</span>에 회원 여러분께 직접 보고드리겠습니다.</p>
       </div>
 
       <!-- 진행 단계 -->
@@ -744,23 +740,17 @@
         </li>
         <li class="steps__item is-now">
           <span class="steps__k">심사</span>
-          <span class="steps__v">접수 마감 후</span>
+          <span class="steps__v">10.26 ~ 11.8</span>
           <span class="steps__s">진행 중</span>
         </li>
         <li class="steps__item">
-          <span class="steps__k">선정자 현황 보고</span>
+          <span class="steps__k">선정자 보고</span>
           <span class="steps__v">11.14(토) 회원의날</span>
           <span class="steps__s">예정</span>
         </li>
       </ol>
     </section>
 
-    <section class="news">
-      <div class="prose">
-        <p>지원서를 한 장 한 장 읽으며, 우리 곁에 이렇게 많은 분들이 <span class="ul">소셜디자이너</span>로서 활동하고 계시다는 것을 새삼 알게 되었습니다. 사람과 자원과 조직을 잇고, 후배를 키우며 동료를 늘려가는 일을 현장에서 묵묵히 해 오신 분들입니다.</p>
-        <p class="ph ph--text">추가 문단 자리입니다. (지원 분야·지역의 특징, 인상 깊었던 점 등)</p>
-      </div>
-    </section>
 
     <div class="page__foot">
       <img src="logo.jpg" alt="도요새 로고" class="page__foot-logo">
@@ -774,7 +764,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead">회원의날<br class="br-mo"> <span class="crayon">&lt;이야기 포트럭 파티&gt;</span> 초대장</h2>
+    <h2 class="h-lead">회원의날<br class="br-mo"> <span class="mark mark--right">&lt;이야기 포트럭 파티&gt;</span> 초대장</h2>
 
     <section class="news">
       <div class="prose">
@@ -815,8 +805,8 @@
         </div>
         <ul class="program__list">
           <li>축하 공연</li>
-          <li>퀴즈 — 십자말풀이<small>최다 정답자에게 선물을 드립니다</small></li>
-          <li>이야기 나눔<small>랜덤박스에서 질문 하나를 뽑아 1분 이내로 답합니다</small></li>
+          <li>퀴즈 — 십자말풀이<small>최다 정답자에게 선물 증정</small></li>
+          <li>이야기 나눔<small>랜덤박스에서 질문을 뽑아 1분 이내로 응답</small></li>
           <li>물품 경매 + 경품 추첨</li>
           <li>식사와 친교의 시간</li>
         </ul>

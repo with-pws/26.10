@@ -684,6 +684,9 @@
 
   .cover__tmp{height:0;margin:0;position:relative;top:-27px;line-height:1;text-align:right;font-family:var(--sans);font-size:.75rem;color:var(--ink-faint)}
   @media (max-width:760px){ .cover__tmp{top:-27px} }
+
+  /* 별표 없는 사선 밑줄 */
+  .mark--nostar::before,.mark--nostar::after{display:none}
 </style>
 </head>
 <body>
@@ -735,7 +738,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="uline">사회혁신가 지원사업</span><br class="br-mo"> 경과 보고</h2>
+    <h2 class="h-lead"><span class="mark mark--nostar">사회혁신가 지원사업</span><br class="br-mo"> 경과 보고</h2>
 
     <section class="news">
       <div class="prose">

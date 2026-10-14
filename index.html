@@ -668,6 +668,16 @@
     .program__list li{font-size:.95rem}
     .program__list small{padding-left:1.4em;font-size:.76rem}
   }
+
+  /* 크레용 물결 밑줄 강조 */
+  .crayon{
+    white-space:nowrap;
+    background-repeat:no-repeat;
+    background-position:0 100%;
+    background-size:100% .55em;
+    padding-bottom:.12em;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 30' preserveAspectRatio='none'><defs><filter id='c' x='-5%' y='-50%' width='110%' height='200%'><feTurbulence type='fractalNoise' baseFrequency='.9 .35' numOctaves='2' seed='7' result='n'/><feColorMatrix in='n' type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 3.2 -.9' result='g'/><feDisplacementMap in='SourceGraphic' in2='n' scale='4' result='d'/><feComposite in='d' in2='g' operator='in'/></filter></defs><g filter='url(%23c)' fill='none' stroke-linecap='round' stroke-linejoin='round'><path d='M4 16 Q 16 4, 28 16 T 52 16 T 76 16 T 100 16 T 124 16 T 148 16 T 172 16 T 196 16 T 220 16 T 244 16 T 268 16 T 292 16' stroke='%23f9c22b' stroke-width='7'/></g></svg>");
+  }
 </style>
 </head>
 <body>
@@ -764,7 +774,7 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead">2026 회원의날<br class="br-mo"> <span style="white-space:nowrap">&lt;이야기 포트럭 파티&gt;</span></h2>
+    <h2 class="h-lead">회원의날<br class="br-mo"> <span class="crayon">&lt;이야기 포트럭 파티&gt;</span> 초대장</h2>
 
     <section class="news">
       <div class="prose">

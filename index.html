@@ -687,6 +687,11 @@
 
   /* 별표 없는 사선 밑줄 */
   .mark--nostar::before,.mark--nostar::after{display:none}
+
+  /* PC: 이사장님 사진 위쪽 천장을 잘라 옆 본문과 높이를 맞춤 */
+  @media (min-width:761px){
+    .photo--trimtop img{aspect-ratio:1/1;object-fit:cover;object-position:center 100%}
+  }
 </style>
 </head>
 <body>
@@ -919,7 +924,7 @@
       <span class="eyebrow">이웃단체 소식 ①</span>
       <h3 class="h-sub">송경용 이사장님, 전태일재단 이사장 취임</h3>
       <div class="split split--even">
-        <figure class="photo photo--free" style="margin:0">
+        <figure class="photo photo--free photo--trimtop" style="margin:0">
           <img src="songky.jpg" alt="전태일재단 이사장 취임식에서 인사말을 하는 송경용 이사장">
         </figure>
         <div class="aside aside--strong">

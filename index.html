@@ -12,7 +12,7 @@
 <meta property="og:title" content="도요새편지 &lt;03&gt; · 2026년 10월 29일">
 <meta property="og:description" content="사회혁신가 지원사업 경과와 회원의날 &lt;이야기 포트럭 파티&gt; 소식을 전합니다.">
 <meta property="og:url" content="https://with-pws.github.io/26.10/">
-<meta property="og:image" content="https://with-pws.github.io/26.10/cover.jpg">
+<meta property="og:image" content="https://with-pws.github.io/26.10/webposter.jpg">
 <meta property="og:image:alt" content="도요새편지 2026년 10월호 표지">
 <meta property="og:locale" content="ko_KR">
 <meta name="twitter:card" content="summary_large_image">
@@ -687,6 +687,10 @@
   /* 별표 없는 사선 밑줄 */
   .mark--nostar::before,.mark--nostar::after{display:none}
 
+
+  /* 1면 목차 항목 간격 좁게 */
+  .lead-list--tight li{margin-bottom:2px}
+
 </style>
 </head>
 <body>
@@ -711,9 +715,7 @@
     </div>
 
     <!-- 표지 영상·사진 자리 (준비되면 2호처럼 .cover + video로 교체) -->
-    <figure class="cover cover--photo"><img src="cover.jpg" alt="회원의날 행사장에 띄운 '안녕? 원순씨!' 풍선"></figure>
-    <!-- 최종 사진 받으면 아래 한 줄 삭제 -->
-    <p class="cover__tmp">(임시)</p>
+    
 
     <section class="prose rise">
       <span class="eyebrow">여는 글</span>
@@ -723,7 +725,7 @@
 
       <p>항상 건강 관리에 유의하시길 바라며, 10월 소식 전합니다.</p>
 
-      <ol class="lead-list" style="margin-top:20px">
+      <ol class="lead-list lead-list--tight" style="margin-top:30px">
         <li><strong>11/14(토) 회원의날</strong>에 초대합니다.</li>
         <li><strong>사회혁신가 지원사업</strong> 공모를 마감했습니다.</li>
         <li><strong>전주·전북 지역모임</strong>을 열었습니다.</li>

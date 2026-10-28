@@ -701,6 +701,14 @@
     .lead-list li{font-size:1.03rem}
     .program__list li{font-size:.99rem}
   }
+
+  /* 본문 줄 간격 살짝 줄임 */
+  .prose p{line-height:1.75;margin-bottom:.8em}
+  .aside, .aside--strong{line-height:1.75}
+  @media (max-width:760px){ .prose p{line-height:1.7} }
+
+  /* 1면 여는 글 문단 간격 줄임 */
+  .cover-prose p{margin-bottom:.45em}
 </style>
 </head>
 <body>
@@ -727,7 +735,7 @@
     <!-- 표지 영상·사진 자리 (준비되면 2호처럼 .cover + video로 교체) -->
     
 
-    <section class="prose rise">
+    <section class="prose rise cover-prose">
       <span class="eyebrow">여는 글</span>
       <p>회원 여러분, 깊어가는 가을 평안하신지요.</p>
 
@@ -752,17 +760,17 @@
   <div class="page__top page__top--bare"></div>
 
   <div class="page__body">
-    <h2 class="h-lead"><span class="mark mark--right">2026 회원의날</span>에<br class="br-mo"> 초대합니다!</h2>
+    <h2 class="h-lead"><span class="mark mark--right">2026 회원의날</span>에<br class="br-mo"> 꼭 참석해주세요!</h2>
 
     <section class="news">
       <div class="prose">
-        <p>새로운 출발을 함께해 주신 회원 여러분과 2026년을 갈무리하며, 한 해의 이야기와 희망을 나누는 자리를 마련했습니다. <span class="pnote">(이미지를 클릭하면 응답 페이지로 이동합니다)</span></p>
+        <p>새로운 출발을 함께해 주신 회원 여러분과 2026년을 갈무리하며, 한 해의 이야기와 희망을 나누는 자리를 마련했습니다. <span class="pnote">(이미지를 클릭하면 참석 신청 페이지로 이동합니다)</span></p>
       </div>
       <a class="notice" href="https://naver.me/FAAgboJC" target="_blank" rel="noopener">
         <img src="webposter.jpg" alt="박원순혁신재단 2026 회원의날 이야기 포트럭 파티 웹자보 — 2026년 11월 14일(토) 15:00~18:00, 푸르메재단 4층, 작은마켓은 2시부터">
       </a>
       <div class="btnrow">
-        <a class="linkbtn linkbtn--slim" href="https://naver.me/FAAgboJC" target="_blank" rel="noopener">회원의날 참석여부 응답하기 <i>&rarr;</i></a>
+        <a class="linkbtn linkbtn--slim" href="https://naver.me/FAAgboJC" target="_blank" rel="noopener">회원의날 참석 신청하기 <i>&rarr;</i></a>
       </div>
     </section>
 
@@ -774,6 +782,17 @@
 
       <div class="program__part">
         <div class="program__bar">
+          <span class="program__no">부대</span>
+          <span class="program__name">작은마켓</span>
+          <span class="program__time">14:00 —</span>
+        </div>
+        <ul class="program__list">
+          <li>회원들이 기부한 물품 판매</li>
+        </ul>
+      </div>
+
+      <div class="program__part">
+        <div class="program__bar">
           <span class="program__no">1부</span>
           <span class="program__name">재단 한해살이 이야기</span>
           <span class="program__time">15:00 — 15:45</span>
@@ -782,8 +801,7 @@
           <li>사전 영상</li>
           <li>참석자 소개</li>
           <li>환영 인사 — 이사장</li>
-          <li>활동 보고 — 사무처장</li>
-          <li>특별 보고 — 상임이사</li>
+          <li>활동 보고 — 상임이사</li>
           <li>특별 감사 — 이사장</li>
         </ul>
       </div>
@@ -800,17 +818,6 @@
           <li>이야기 나눔</li>
           <li>물품 경매 + 경품 추첨</li>
           <li>식사와 친교의 시간</li>
-        </ul>
-      </div>
-
-      <div class="program__part">
-        <div class="program__bar">
-          <span class="program__no">부대</span>
-          <span class="program__name">작은마켓</span>
-          <span class="program__time">14:00 —</span>
-        </div>
-        <ul class="program__list">
-          <li>회원들이 기부한 물품 판매</li>
         </ul>
       </div>
     </section>
@@ -831,9 +838,10 @@
 
     <section class="news">
       <div class="prose">
-        <p>지난 10월 1일부터 10월 25일까지 진행한 <strong>사회혁신가 지원사업 공모</strong>에 많은 분들이 관심을 갖고 지원해 주셨습니다. <strong>지원해 주신 모든 분, 그리고 공모 소식을 주변에 알려 주신 회원 여러분께 감사드립니다.</strong></p>
-        <p>현재 심사를 진행 중이며, 선정된 분들의 활동이 다시 시민사회의 힘이 될 수 있도록 함께하겠습니다.</p>
-        <p><span class="hl">선정자 현황은 11월 14일 회원의날</span>에 직접 보고드리겠습니다.</p>
+        <p>박원순혁신재단의 목적사업 중 하나인 <strong>&lt;사회혁신가 지원사업&gt;</strong>이 첫걸음을 떼었습니다.</p>
+        <p>지난 10월 1일부터 공모가 진행되었고, <strong>많은 시민사회 활동가께서 지원해 주셨습니다.</strong></p>
+        <p><strong>회원 여러분께서 모아주신 마음이 박원순의 이름으로 꼭 필요한 곳에 쓰입니다.</strong></p>
+        <p>자세한 내용은 회원의날 보고드리겠습니다.</p>
       </div>
 
       <!-- 진행 단계 -->
@@ -880,8 +888,9 @@
 
     <section class="news">
       <div class="prose">
-        <p>지난 10월 20일, <strong>전주·전북 지역 회원분들과 재단의 첫 권역 모임</strong>을 가졌습니다. 원순씨를 변함없이 마음에 품고 계신 분들과 따뜻한 연대를 나눌 수 있어 감사한 시간이었습니다.</p>
-        <p>앞으로도 전국 각지의 회원 여러분을 직접 찾아뵙고, 소중한 만남을 꾸준히 이어가겠습니다.</p>
+        <p>지난 10월 20일, <strong>전주·전북 지역 회원분들과 처음으로 지역 모임</strong>을 가졌습니다.</p>
+        <p>이선희, 유희성, 조익빈 회원님께서 여러모로 봉사해 주신 덕분에, 박원순을 기억하는 전주·전북 분들을 만날 수 있었습니다.</p>
+        <p>지역 모임을 꾸리고 싶은 분은 언제든 연락 주세요. 적극적으로 찾아가 설명드리고, 이야기 듣겠습니다.</p>
       </div>
     </section>
 
